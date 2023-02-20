@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 class="head">Registration Form</h1>
+    <form method="post">
+      <div><p>Enter your details below</p></div>
+      <div>
+        <label for="email"><strong>.</strong></label>
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="your_email@gmail.com"
+          required
+        />
+      </div>
+      <div>
+        <label for="password"><strong>.</strong></label>
+        <input
+          type="password"
+          name="password"
+          id="mail"
+          placeholder="password"
+          minlength="8"
+          maxlength="20"
+          required
+        />
+      </div>
+      <div>
+        <h3>!Type a complex password with 8-20 character.</h3>
+      </div>
+      <div>
+        <label for="phonenumber"><strong>.</strong></label>
+        <input
+          type="number"
+          name="phonenumber"
+          id="mob"
+          placeholder="+20 phone number"
+          maxlength="13"
+        />
+      </div>
+      <hr />
+      <div>
+        <h2>Enter your profession:</h2>
+      </div>
+      <div>
+        <label for="profession"><strong>.</strong></label>
+        <input type="radio" name="profession" id="Student" /> Student
+        <input type="radio" name="profession" id="Teacher" /> Teacher
+        <input type="radio" name="profession" id="Developer" /> Developer
+      </div>
+      <div>
+        <label for="stage" id="stage">
+          Choose the stage if you are (student)
+        </label>
+        <select name="stage" id="stage">
+          <option value="">Select</option>
+          <option value="">First Primary</option>
+          <option value="">Secondary</option>
+          <option value="">10th</option>
+          <option value="">12th</option>
+          <option value="">Graduation</option>
+          <option value="">Post-Graduation</option>
+        </select>
+      </div>
+      <hr />
+      <div>
+        <label for="dob">Enter your Birth date</label>
+        <input type="date" name="dob" id="d" />
+      </div>
+      <hr />
+      <div>
+        <label for="notes"><strong>.</strong></label>
+        <input type="text" name="notes" id="Nots" placeholder="Any Notes" />
+      </div>
+      <hr />
+      <div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>
